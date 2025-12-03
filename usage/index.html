@@ -531,6 +531,7 @@
 
 
 <h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h1>
+<p>Using the Bitext NLP SDK for Python is as simple as importing the Python module, instantiating a <code>Pipeline</code> object with the appropriate language code and then passing it some text.</p>
 <h2 id="creating-a-pipeline">Creating a pipeline<a class="headerlink" href="#creating-a-pipeline" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bitext_pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pipeline</span>
 
@@ -538,13 +539,13 @@
 </code></pre></div>
 
 <ul>
-<li>The argument is a language code such as <code>"eng"</code>.</li>
+<li>The argument is an ISO 639-2 language code such as <code>"eng"</code>.</li>
 </ul>
 <h2 id="running-analysis">Running analysis<a class="headerlink" href="#running-analysis" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Yesterday, John Smith visited the Coca Cola offices in Madrid.&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<p>Typical attributes on <code>result</code>:</p>
+<p>Relevant attributes on <code>result</code>:</p>
 <ul>
 <li><code>result.entities</code> – list of entity objects</li>
 </ul>
