@@ -362,6 +362,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#entity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#threading-and-concurrency" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -467,6 +478,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#entity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#threading-and-concurrency" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -531,6 +553,28 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">ent</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">ent</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="n">ent</span><span class="o">.</span><span class="n">start_char</span><span class="p">,</span> <span class="n">ent</span><span class="o">.</span><span class="n">end_char</span><span class="p">)</span>
 </code></pre></div>
 
+<p>Output:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">John</span> <span class="n">Smith</span> <span class="n">PER</span> <span class="mi">11</span> <span class="mi">21</span>
+<span class="n">Coca</span> <span class="n">Cola</span> <span class="n">CMP</span> <span class="mi">34</span> <span class="mi">43</span>
+<span class="n">Madrid</span> <span class="n">LOC</span> <span class="mi">55</span> <span class="mi">61</span>
+</code></pre></div>
+
+<h2 id="entity-types">Entity Types<a class="headerlink" href="#entity-types" title="Permanent link">&para;</a></h2>
+<p>The following entity types are currently supported across all languages:</p>
+<ul>
+<li><code>PER</code> – person name</li>
+<li><code>LOC</code> – location</li>
+<li><code>CMP</code> – company or brand</li>
+<li><code>ORG</code> – organization</li>
+<li><code>MISC</code> – miscellaneous</li>
+</ul>
+<p>Additionally, English currently supports these additional entity types:
+- <code>PHONE</code> – phone number
+- <code>DATE</code> – date
+- <code>TIME</code> – time
+- <code>CURR</code> – currency
+- <code>HASH</code> – #hashtag
+- <code>USER</code> – @username</p>
 <h2 id="threading-and-concurrency">Threading and concurrency<a class="headerlink" href="#threading-and-concurrency" title="Permanent link">&para;</a></h2>
 <p>Each <code>Pipeline</code> instance is independent and safe to use from a single thread.<br />
 Do <strong>not</strong> share one instance across threads.</p>
